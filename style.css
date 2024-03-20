@@ -1,0 +1,47 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 20px;
+  text-align: center; /* Centraliza o título */
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar linhas se necessário */
+  justify-content: space-between; /* Espaça os cards uniformemente */
+  margin-top: 50px;
+}
+
+.card {
+  border: 1px solid #b49292;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  width: 300px; /* Ajuste a largura para o layout desejado */
+  display: flex; /* Torne o card um contêiner flexbox */
+  flex-direction: column; /* Organiza o conteúdo na vertical */
+  text-align: left;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  border-radius: 5px;
+  /* Altura opcional para controlar o tamanho da imagem */
+  /* max-height: 200px; */ /* Exemplo de definição de altura máxima */
+}
+
+.card h2 {
+  margin-top: 10px;
+  font-size: 18px;
+  flex: 1; /* Ocupa todo o espaço disponível verticalmente */
+}
+
+.card p {
+  margin-top: 10px;
+  flex: 2; /* Ocupa o dobro do espaço do título */
+}
